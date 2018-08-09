@@ -1,0 +1,69 @@
+<div class="alert-filter-container">
+  <div class="alert-filter-box">
+  	<label class="filter-heading">Severity</label>
+  	<div class="alert-filter-data">
+		<div class="row">
+		    <div class="col-md-6">
+		       <ul class="filter-list">
+		    	  <li *ngFor="let sev of severity">
+		    	  	<a class="filter-data" href="javascript:void(0)">{{sev}}</a>
+		    	   </li>
+		    	</ul>	
+		    </div>
+		    <div class="col-md-6">
+		    	<ul class="filter-list">
+		    		<li *ngFor="let scount of severityCount">
+		    	         <label class="filter-value">{{scount}}</label>		
+		    		</li>
+		    	</ul>
+		    	
+		    </div>	
+		</div>
+  	</div>
+  </div>	
+  <div class="alert-filter-box">
+  	<label class="filter-heading">Protocol</label>
+  	<div class="alert-filter-data">
+		<div class="row">
+		    <div class="col-md-6">
+		       <ul class="filter-list">
+		    	  <li *ngFor="let protocol of protocols">
+		    	  	<a class="filter-data" href="javascript:void(0)">{{protocol}}</a>
+		    	   </li>
+		    	</ul>	
+		    </div>
+		    <div class="col-md-6">
+		    	<ul class="filter-list">
+		    		<li *ngFor="let pcount of protocolCount">
+		    	         <label class="filter-value">{{pcount}}</label>		
+		    		</li>
+		    	</ul>
+		    	
+		    </div>	
+		</div>
+  	</div>
+  </div>
+  <div class="alert-filter-box">
+  	<label class="filter-heading">Client IP</label>
+  	<div class="alert-filter-data">
+		<div class="row">
+		    <div class="col-md-6">
+		       <ul class="filter-list">
+		    	  <li *ngFor="let cip of clientIp">
+		    	  	<a class="filter-data" href="javascript:void(0)">{{cip}}</a>
+		    	   </li>
+		    	</ul>	
+		    </div>
+		    <div class="col-md-6">
+		    	<ul class="filter-list">
+		    		<li *ngFor="let ccount of clientIpCount">
+		    	         <label class="filter-value">{{ccount}}</label>		
+		    		</li>
+		    	</ul>
+		    	
+		    </div>	
+		</div>
+  	</div>
+  </div>	
+	
+</div>
